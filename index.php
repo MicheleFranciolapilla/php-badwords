@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        form
+        {
+            width:400px;
+            background-color:lightgray;
+            border-radius:5px;
+            border: 1px solid black;
+            margin-bottom: 50px;
+            padding:15px 30px;
+        }
         .labels
         {
             margin-top:35px;
@@ -24,15 +33,15 @@
         <h1>Benvenuto nel mio primo programma in PHP</h1>
     </header>
     <main>
-        <form action="" style="padding-left:30px;">
+        <form action="ban_bad_word.php" method="GET">
             <div class="labels">
                 <label for="paragraph">Paragrafo:</label> 
             </div>
-            <input id="paragraph" type="text" minlength="20" placeholder="Digita la tua frase (lunghezza minima: 20 caratteri)">
+            <input id="paragraph" type="text" minlength="20" placeholder="Digita la tua frase (lunghezza minima: 20 caratteri)" name="my_paragraph">
             <div class="labels">
                 <label for="bad_word">Parola da censurare:</label> 
             </div>
-            <input id="bad_word" type="text" minlength="3" placeholder="Digita la parola da censurare(lunghezza minima: 3 caratteri)">
+            <input id="bad_word" type="text" minlength="3" placeholder="Digita la parola da censurare(lunghezza minima: 3 caratteri)" name="my_bad_word">
             <div style="margin-top:50px;">
                 <button type="submit">Conferma</button>
             </div>
