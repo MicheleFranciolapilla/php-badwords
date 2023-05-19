@@ -37,11 +37,11 @@
             <div class="labels">
                 <label for="paragraph">Paragrafo:</label> 
             </div>
-            <input id="paragraph" type="text" minlength="20" placeholder="Digita la tua frase (lunghezza minima: 20 caratteri)" name="my_paragraph">
+            <input id="paragraph" type="text" minlength="20" placeholder="Digita la tua frase (lunghezza minima: 20 caratteri)" name="my_paragraph" required>
             <div class="labels">
                 <label for="bad_word">Parola da censurare:</label> 
             </div>
-            <input id="bad_word" type="text" minlength="3" placeholder="Digita la parola da censurare(lunghezza minima: 3 caratteri)" name="my_bad_word">
+            <input id="bad_word" type="text" placeholder="Parola da censurare" name="my_bad_word" required>
             <div style="margin-top:50px;">
                 <button type="submit">Conferma</button>
             </div>
