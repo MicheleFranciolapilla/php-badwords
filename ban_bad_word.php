@@ -15,6 +15,8 @@
     var_dump($the_paragraph);
     var_dump($the_bad_word);
     var_dump($final_paragraph);
+    echo "Segue il tuo paragrafo 'esploso' intorno ai simboli di censura '***':<br>";
+    var_dump(explode("***",$final_paragraph));
 
 
 ?>
